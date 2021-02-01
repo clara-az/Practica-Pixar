@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a{
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+p a{
+    display: inline-flex
+}
+li{
+    list-style-type: none;
+}
+h1, h2, h3, h4, h5, h6, strong{
+    font-size: inherit;
+    font-weight: inherit;
+}
+img{
+    width: 100%;
+    display:block;
+    object-fit: cover;
+}
+body{
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color:black;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+} 
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    width: 100%;
+    min-height: 100px;
+    /* background-color: aqua; */
+}
+
+.header .centrado{
+    width: 90%;
+    min-height: 100px;
+    /* background-color: azure; */
+    margin: auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: initial;
+}
+
+.header .centrado .h1{
+    max-width: 200px;
+    /* min-height: 100px; */
+    /* background-color: chartreuse; */
+}
+
+.header .centrado .fa-bars{
+    display: none;
+}
+
+.header .centrado .nav{
+    max-width: calc(100% - 200px);
+    /* background-color: coral; */
+}
+
+.header .centrado .ul{
+    /* width: 100%; */
+    /* background-color: lavender; */
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: initial;
+
+}
+.header .centrado .ul .li{
+    margin: 0 0 0 1em;
+    font-weight: 600;
+}
+
+.main{
+    width: 100%;
+}
+
+.main .soul{
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: lightslategray; */
+    background-image: url(../assets/fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: initial;
+}
+
+.main .soul .h2{
+    width: 90%;
+    max-width: 760px;
+    min-height: 50px;
+    /* background-color: palegreen; */
+
+}
+
+.main .columnas{
+    width: 100%;
+    min-height: 100px;
+    /* background-color: paleturquoise; */
+    padding: 10vh 0;
+}
+.columnas .centrado{
+    width: 80%;
+    min-height: 100px;
+    /* background-color: palevioletred; */
+    margin: auto;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: initial;
+}
+
+.columnas .centrado .columna{
+    width: calc( 100% / 3 - 40px);
+    min-height: 100px;
+    /* background-color: papayawhip; */
+}
+
+.columnas .centrado .columna .imagen{
+    width: 100%;
+    min-height: 200px;
+    margin: 0 0 40px 0;
+}
+
+.columnas .centrado .columna .titular{
+    width: 100%;
+    min-height: 20px;
+    /* background-color: peru; */
+    font-weight: 700;
+}
+
+.footer{
+    width: 100%;
+    min-height: 100px;
+    /* background-color: pink; */
+    font-size: .8em;
+}
+
+.footer .rrss{
+    width: 100%;
+    min-height: 50px;
+    /* background-color: plum; */
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: initial;
+    align-content: center;
+}
+.footer .rrss .redes{
+    /* width: calc(100% / 4); */
+    min-height: 50px;
+    /* background-color:salmon; */
+    margin: 0 10px;
+}
+
+.footer .rrss .redes .fab{
+    font-size: 2em;
+    color: rgb(59, 57, 57);
+}
+
+.footer .links{
+    width: 70%;
+    min-height: 50px;
+    /* background-color: springgreen; */
+    margin: 20px auto;
+   
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: initial;
+    align-content: center;
+}
+
+.footer .links .enlaces{
+    min-height: 20px;
+    /* background-color: turquoise; */
+    border:0 0 3px 0 black;
+}
+
+.footer .links .enlaces .a{
+    /* min-height: 20px; */
+    /* background-color: turquoise; */
+    border-bottom: 1px solid black;
+}
+
+.footer .copyright{
+    width: 50%;
+    /* background-color: thistle; */
+    margin: 10px  auto;
+}
+
+@media screen and (max-width: 1024px){
+    .body{
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 960px){
+    .header .centrado .nav{
+        display: none;
+    }
+
+    .header .centrado .fa-bars{
+        display: flex;
+    }
+
+    .soul{
+        background-attachment: scroll;
+    }
+
+    .columnas .centrado .columna{
+        width: 100%;
+        margin: 0 0 3em 0;
+    }
+
+    .columnas{
+        padding: 10vh 0 4vh;
+    }
+
+    .footer{
+        font-size: .5em;
+    }
+}
