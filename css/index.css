@@ -134,19 +134,19 @@ html{
     align-content: initial;
 }
 
-.columnas .centrado .columna{
+.columnas .columna{
     width: calc( 100% / 3 - 40px);
     min-height: 100px;
     /* background-color: papayawhip; */
 }
 
-.columnas .centrado .columna .imagen{
+.columnas .imagen{
     width: 100%;
     min-height: 200px;
     margin: 0 0 40px 0;
 }
 
-.columnas .centrado .columna .titular{
+.columnas .titular{
     width: 100%;
     min-height: 20px;
     /* background-color: peru; */
@@ -171,14 +171,14 @@ html{
     align-items: initial;
     align-content: center;
 }
-.footer .rrss .redes{
+.footer .redes{
     /* width: calc(100% / 4); */
     min-height: 50px;
     /* background-color:salmon; */
     margin: 0 10px;
 }
 
-.footer .rrss .redes .fab{
+.footer .fab{
     font-size: 2em;
     color: rgb(59, 57, 57);
 }
@@ -197,13 +197,13 @@ html{
     align-content: center;
 }
 
-.footer .links .enlaces{
+.footer .enlaces{
     min-height: 20px;
     /* background-color: turquoise; */
     border:0 0 3px 0 black;
 }
 
-.footer .links .enlaces .a{
+.footer .a{
     /* min-height: 20px; */
     /* background-color: turquoise; */
     border-bottom: 1px solid black;
