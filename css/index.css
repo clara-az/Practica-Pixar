@@ -234,9 +234,17 @@ html{
     border:0 0 3px 0 var(--black);
 }
 
-.footer .a{
+.footer .a-links{
     /* min-height: 20px; */
     /* background-color: turquoise; */
+    border-bottom: 0.16em solid var(--black);
+}
+.a-links::after{
+    content:"|";
+    color: black;
+    margin: 0 .5em 0;
+}
+.footer .a{
     border-bottom: 0.16em solid var(--black);
 }
 
@@ -295,7 +303,10 @@ html{
    .header .centrado .fa-bars{
        color: white;
    }
-
+   .nav{
+       color: white
+   }
+ 
    .columnas{
        background-color: black;
        color: white;
