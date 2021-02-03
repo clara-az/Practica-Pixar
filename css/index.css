@@ -1,3 +1,8 @@
+:root{
+    --white: white ;
+    --black: black;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -27,7 +32,7 @@ img{
 body{
     font-size: 100%;
     font-family: 'Open Sans', sans-serif;
-    color:black;
+    color: var(--black);
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -90,8 +95,8 @@ html{
 .header .ul2{
    
    position: absolute; 
-   background-color: black;
-   color: white;
+   background-color: var(--black);
+   color: var(--white);
    padding: 1em;
    opacity: 0;
    transition: all .5s ease;
@@ -128,7 +133,7 @@ html{
     align-content: initial;
 }
 
-.main .soul .h2{
+.main .h2{
     width: 90%;
     max-width: 47.5em;
     min-height: 3.13em;
@@ -205,7 +210,7 @@ html{
     transition: all .3s ease;
 }
 .footer .fab:hover{
-    color: black;
+    color: var(--black);
     font-size: 2.2em;
 }
 
@@ -226,13 +231,13 @@ html{
 .footer .enlaces{
     min-height: 20px;
     /* background-color: turquoise; */
-    border:0 0 3px 0 black;
+    border:0 0 3px 0 var(--black);
 }
 
 .footer .a{
     /* min-height: 20px; */
     /* background-color: turquoise; */
-    border-bottom: 0.16em solid black;
+    border-bottom: 0.16em solid var(--black);
 }
 
 .footer .copyright{
@@ -275,5 +280,37 @@ html{
 }
 
 @media screen and (prefers-color-scheme:dark){
-    background-color: white;
+   /* Pensaba que haciéndolo con root funcionaría pero por lo visto no */
+    /* :root{
+       --black: white;
+       --white: black;
+   } */
+
+   .header{
+       background-color: var(--black);
+   }
+   .header .h1{
+       filter: invert();
+   }
+   .header .centrado .fa-bars{
+       color: white;
+   }
+
+   .columnas{
+       background-color: black;
+       color: white;
+   }
+   .footer{
+       background-color: black;
+       color: white
+   }
+
+   .footer .fab{
+
+    color: rgb(211, 211, 211);
+    }
+    .footer .fab:hover{
+    color: var(--white);
+    font-size: 3em;
+    }
 }
