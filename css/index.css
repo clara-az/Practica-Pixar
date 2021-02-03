@@ -84,9 +84,24 @@ html{
 .header .centrado .ul .li{
     margin: 0 0 0 1em;
     font-weight: 600;
+    position:relative
 }
 
-.main{
+.header .ul2{
+   position: absolute; 
+   background-color: black;
+   color: white;
+   padding: 1em;
+   opacity: 0;
+   transition: all .5s ease;
+   pointer-events: none;
+}
+.header .li:hover .ul2{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+    .main{
     width: 100%;
 }
 
