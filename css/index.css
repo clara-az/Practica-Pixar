@@ -88,6 +88,7 @@ html{
 }
 
 .header .ul2{
+   
    position: absolute; 
    background-color: black;
    color: white;
@@ -99,6 +100,11 @@ html{
 .header .li:hover .ul2{
     opacity: 1;
     pointer-events: auto;
+}
+.header .li2{
+  
+    margin: 0 0 0.4em;
+    
 }
 
     .main{
@@ -124,8 +130,8 @@ html{
 
 .main .soul .h2{
     width: 90%;
-    max-width: 760px;
-    min-height: 50px;
+    max-width: 47.5em;
+    min-height: 3.13em;
     /* background-color: palegreen; */
 
 }
@@ -158,7 +164,7 @@ html{
 .columnas .imagen{
     width: 100%;
     min-height: 200px;
-    margin: 0 0 40px 0;
+    margin: 0 0 2.5em 0;
 }
 
 .columnas .titular{
@@ -196,6 +202,11 @@ html{
 .footer .fab{
     font-size: 2em;
     color: rgb(59, 57, 57);
+    transition: all .3s ease;
+}
+.footer .fab:hover{
+    color: black;
+    font-size: 2.2em;
 }
 
 .footer .links{
@@ -221,7 +232,7 @@ html{
 .footer .a{
     /* min-height: 20px; */
     /* background-color: turquoise; */
-    border-bottom: 1px solid black;
+    border-bottom: 0.16em solid black;
 }
 
 .footer .copyright{
@@ -261,4 +272,8 @@ html{
     .footer{
         font-size: .5em;
     }
+}
+
+@media screen and (prefers-color-scheme:dark){
+    background-color: white;
 }
