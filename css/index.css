@@ -265,8 +265,20 @@ html{
         display: none;
     }
 
-    .header .centrado .fa-bars{
+    .header .centrado .nav .ver{
         display: flex;
+    }
+
+    .header .centrado .fa-bars{
+        display: block;
+    }
+
+    .header .ul{
+        flex-direction: column;
+    }
+
+    .header .ul .li{
+        margin: 1em 0;
     }
 
     .soul{
