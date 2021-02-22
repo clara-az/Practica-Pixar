@@ -1,6 +1,6 @@
 'use strict';
-var icono = document.querySelector('.header .fa-bars');
-var nav = document.querySelector('.header .nav');
-icono.addEventListener('click', function () {
+var bars = document.querySelector('.fa-bars');
+var nav = document.querySelector('.nav');
+bars.addEventListener('click', function () {
     nav.classList.toggle('ver');
 });

@@ -1,8 +1,9 @@
 'use strict'
 
-const icono = (document.querySelector('.header .fa-bars') as HTMLElement)
-const nav = (document.querySelector('.header .nav') as HTMLElement)
 
-icono.addEventListener('click',() : void => {
+const bars = (document.querySelector('.fa-bars') as HTMLElement)
+const nav  = (document.querySelector('.nav') as HTMLElement)
+
+bars.addEventListener('click',() : void =>{
     nav.classList.toggle('ver')
-} )
+})

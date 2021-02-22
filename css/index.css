@@ -261,12 +261,20 @@ html{
 }
 
 @media screen and (max-width: 960px){
+    .body{
+        font-size:small;
+    }
+    
     .header .centrado .nav{
         display: none;
     }
 
-    .header .centrado .nav .ver{
+    .header .centrado .nav.ver{
         display: flex;
+        flex-flow: row wrap;
+        justify-content: initial;
+        align-content: center;
+        align-items: center;
     }
 
     .header .centrado .fa-bars{
@@ -274,11 +282,15 @@ html{
     }
 
     .header .ul{
-        flex-direction: column;
+        display: flex;
+        flex-flow: row wrap;
     }
 
     .header .ul .li{
         margin: 1em 0;
+
+        font-size: small;
+
     }
 
     .soul{
